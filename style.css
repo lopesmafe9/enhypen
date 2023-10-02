@@ -1,0 +1,267 @@
+*{
+  margin: 0;
+}
+@media (max-width:600px){
+
+  .nav .nav-btn{
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+  }
+  .nav .nav-btn label{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    border: none;
+    border-top-right-radius: 10px;
+  
+  
+  }
+  .nav .nav-btn label:hover,
+  .nav #nav-check:checked ~ .nav-btn label{
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+  }
+  .nav .nav-btn label span{
+    display: inline-block;
+    width: 25px;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  .nav .nav-links{
+    position: absolute;
+    display: block;
+    width: 99%;
+    height: 0px;
+    background-color: #333;
+    transition: all .3s ease-in;
+    overflow-y: hidden;
+    top: 90px;
+    left: 0px;
+    
+  }
+  .nav .nav-links a{
+    display: block;
+    width: 90%;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .nav #nav-check:not(:checked) ~ .nav-links{
+    height: 0px;
+  }
+  .nav #nav-check:checked ~ .nav-links{
+    height: 100px;
+    overflow-y: hidden;
+  }
+}   
+@font-face {
+  font-family: fate;
+  src: url(fonts/viberate/VIBERATE.ttf);
+}
+@font-face {
+  font-family: fate2;
+  src: url(fonts/basically_serif/Basically-Serif_FREE-version.ttf);
+}
+@font-face {
+  font-family: fate3;
+  src: url(fonts/gilgan/Gilgan.otf);
+}
+
+.nav{
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
+
+}
+.nav-title{
+  display: inline-block;
+  color: white;
+  font-family: 'fate';
+  font-size: 50px;
+  padding-left: 10px;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.nav .nav-links{
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  column-gap: 30px;
+  font-size: 20px;
+  padding-right: 10px  ;
+}
+
+.nav .nav-links a{
+  display: inline-flex;
+  padding: 10px 10px;
+  all:unset;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'fate3';
+
+}
+.nav .nav-links a:hover{
+  color: #9b9b9b;
+  text-decoration:underline wavy;
+  text-decoration-thickness: 3px;
+  transition: .3s;
+}
+.nav #nav-check{
+  display: none;
+}
+#section-banner{
+  width: 80%;
+  height: 100%;
+  align-content: center;
+}
+body{
+  background-color: black;
+  align-content: center;
+}
+#section-title{
+  font-family: 'fate';
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  background: linear-gradient(to bottom, #133B5C, black);
+}
+.card{
+  margin: 40px;
+  padding: 10px;
+  width: 25%;
+  height: 30%;
+  background-color: #eee;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+#cards{
+  position: relative;
+  justify-content: flex-start;
+}
+img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+
+}
+.card-title{
+  padding-top: 30px;
+  font-family:'fate3' ;
+  font-size: 25px;
+  color:black;
+}
+.card-content{
+  font-family:'fate2' ;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: black;
+}
+.card-action a{
+  padding-top: 25px;
+  font-family: 'fate3';
+  font-size: 20px;
+  text-decoration: none;
+
+}
+.container{
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 90%;
+  padding: 20px 40px;
+  margin: 10px 15px;
+  background-color:#133B5C;
+  color:#eee;
+  font-family:'fate2';
+}
+#section-interlude{
+  font-family: 'fate';
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  background: linear-gradient(to bottom, #133B5C, black);
+}
+footer{
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+}
+.footer-end{
+  color: #eee;
+  font-family: 'fate3';
+  font-size: 15px;
+  padding-top: 50px;
+}
+.footer-text{
+  color: #eee;
+  font-family: 'fate3';
+  font-size: 25px;
+  padding-top: 50px;
+  text-decoration: none;
+}
+table{
+  margin-top: 30px;
+  width: 40%;
+}
+.table{
+  color: white;
+  width: 50%;
+}
+.table-font1{
+  
+  font-family:'fate3';
+  font-size: 20px;
+  padding: 40px;
+  background-color: #333;
+  border-radius: 10px;
+  
+}
+.table-title{
+  font-family: 'fate';
+  color: #eee;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #133B5C;
+}
+.table-font2{
+  font-family:'fate3';
+  font-size: 20px;
+  padding: 30px;
+  background-color: #fc5f5f;
+  border-radius: 10px;
+ 
+}
+.table-divider{
+  color: #eee;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+
+
